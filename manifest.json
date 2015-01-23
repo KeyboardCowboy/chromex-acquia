@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Acquia Cloud Process Monitor",
+  "description": "Creates notifications for new or changing process states so you don't have to actively monitor your processes.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "acquia_cloud.png",
+    "default_title": ""
+  },
+  "background": {
+    "persistent": true,
+    "scripts": ["bg.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://insight.acquia.com/cloud/*"],
+      "js": ["jquery-2.1.3.min.js", "processCheck.js"]
+    }
+  ],
+  "externally_connectable": {
+    "matches": ["https://insight.acquia.com/cloud/*"]
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "notifications"
+  ]
+}
