@@ -1,4 +1,4 @@
-# Acquia Clould Process Monitor
+# ![Acquia Cloud Logo](https://raw.githubusercontent.com/KeyboardCowboy/chromex-acquia/master/acquia_cloud.png) Acquia Clould Process Monitor
 Google Chrome extension for Acquia Cloud to create notifications as processes change state.
 
 ## Usage
